@@ -1,6 +1,6 @@
 let catA = 1;
-let catB = 6;
-let MouseC = 5;
+let catB = 2;
+let MouseC = 3;
 
 function catAndMouse(x,y,z){
     if(z <= x && y > x){
