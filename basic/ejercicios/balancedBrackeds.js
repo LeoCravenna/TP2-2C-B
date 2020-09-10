@@ -1,6 +1,33 @@
 // Complete the isBalanced function below.
 
+// HECHA POR EL PROFESOR/////////////////////////////////
 function isBalanced(s) {
+    let aux = -1;
+
+    while (s.length != 0) {
+      aux = s.length;
+
+      s = s.replace("()","");
+      s = s.replace("[]","");
+      s = s.replace("{}","");
+
+      if(aux == s.length) return "NO";
+    }
+
+  return "YES";
+
+}
+
+// TEST
+console.log(isBalanced('{[') == 'NO');
+console.log(isBalanced('{[()]}') == 'YES');
+console.log(isBalanced('{[(])}') == 'NO');
+console.log(isBalanced('{{[[(())]]}}') == 'YES');
+console.log(isBalanced('{{[[(())]]}}{}()') == 'YES');
+////////////////////////////////////////////////////////
+
+// HECHA POR MI
+/*function isBalanced(s) {
 
     let brackeds = "[]{}()<>"
     let stack = []
@@ -35,4 +62,4 @@ console.log(isBalanced('{{[[(())]]}}{}()'));
 console.log(isBalanced('{[()]}') == 'YES');
 console.log(isBalanced('{[(])}') == 'NO');
 console.log(isBalanced('{{[[(())]]}}') == 'YES');
-console.log(isBalanced('{{[[(())]]}}{}()') == 'YES');
+console.log(isBalanced('{{[[(())]]}}{}()') == 'YES');*/
