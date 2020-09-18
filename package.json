@@ -19,6 +19,7 @@
   "homepage": "https://github.com/LeoCravenna/TP2-2C-B#readme",
   "dependencies": {
     "chalk": "^4.1.0",
+    "express": "^4.17.1",
     "validator": "^13.1.1"
   }
 }
